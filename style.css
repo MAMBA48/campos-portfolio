@@ -1,0 +1,70 @@
+body, * {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+}
+main.container {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+content.interactions {
+    display: flex;
+    background-color: lightblue;
+    align-items: space-between;
+    height: 550px;
+    width: 1000px;
+    border-radius: 0px 15px 15px 15px;
+}
+aside.skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px;
+    padding: 8px;
+    border: 2px solid aqua;
+    height: auto;
+    width: 200px;
+    border-radius: 0px 0px 15px 15px;
+    color: aqua;
+}
+section.person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    padding: 5px;
+}
+article.status {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 180px;
+    background-color: lightblue;
+    border: 2px solid aqua;
+    border-radius: 0px 0px 15px 15px;
+    padding: 5px;
+}
+main.info {
+    margin: 10px;
+    border: 2px solid aqua;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+}
+table.skills-list {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    border: 2px solid aqua;
+    width: 100%;
+}
+tr.skills-percent {
+    border: 2px solid red;
+}

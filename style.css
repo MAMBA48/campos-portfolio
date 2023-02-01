@@ -16,7 +16,9 @@ content.interactions {
     height: 550px;
     width: 1000px;
     border-radius: 0px 15px 15px 15px;
-    border: 2px solid aqua;
+    border: 1px solid aqua;
+    border-top: 1px solid aqua;
+    box-shadow: 0px 0px 10px 1px aqua;
 }
 aside.skills {
     display: flex;
@@ -25,7 +27,7 @@ aside.skills {
     flex-direction: column;
     margin: 10px;
     padding: 8px;
-    border: 2px solid aqua;
+    border: 1px solid transparent;
     height: auto;
     width: 200px;
     border-radius: 0px 0px 15px 15px;
@@ -48,20 +50,25 @@ article.status {
     align-items: center;
     height: 250px;
     width: 200px;
-    border: 2px solid aqua;
+    border: 1px solid transparent;
     border-radius: 0px 0px 15px 15px;
     padding: 5px;
 }
 main.info {
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     border: 2px solid aqua;
+    border-top: transparent;
+    border-right: transparent;
+    color: aqua;
     width: 100%;
     border-radius: 0px 0px 15px 15px;
 }
 table.skills-list {
     display: flex;
     flex-direction: column;
-    border: 2px solid aqua;
+    border: 1px solid transparent;
     width: 100%;
 }
 td.progress {
@@ -71,12 +78,15 @@ td.progress {
     height: 100%;
     width: 100%;
     margin: 5px;
-    border: 2px solid aqua;
+    border: 1px solid transparent;
+}
+td {
+    width: 180px;
 }
 tr.lineSkills {
     display: flex;
     flex-direction: row;
-    border: 2px solid aqua;
+    border: 2px solid transparent;
 }
 #percent {
     display: flex;
@@ -85,11 +95,18 @@ tr.lineSkills {
 }
 div.bgProgress {
     display: flex;
-    width: 100%;
+    left: 0px;
+    padding: 2px;
+    transition-duration: 0.5s;
+    width: 70px;
     background-color: #00ff008e;
+    border: 0.5px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 2px #00ff00;
 }
 .btStyle {
     display: flex;
+    transition-duration: 0.15s;
     justify-content: center;
     align-items: center;
     color: aqua;
@@ -97,5 +114,65 @@ div.bgProgress {
     font-size: 16pt;
     height: 20px;
     width: 20px;
+    border: 1px solid transparent;
+}
+.btStyle:active {
+    color: #000;
+    background-color: aqua;
+}
+.top-menu {
+    display: flex;
+    padding: 4px;
+    justify-content: right;
+    top: 0%;
+    height: 50px;
+    border: 1px solid transparent;
+}
+.aba {
+    display: flex;
+    transition-duration: 0.2s;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 120px;
     border: 2px solid aqua;
+    color: aqua;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 50px 10px 5px 0px;
+}
+.aba:hover {
+    border-left: transparent;
+    border-bottom: 0.5px solid aqua;
+    box-shadow: 0px 0px 10px 1px aqua;
+    box-shadow: 0px 0px #000;
+    border-radius: 50px;
+}
+.textInfo {
+    display: flex;
+}
+.marginP {
+    margin: 20px;
+}
+.bt-help {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 20pt;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+}
+footer {
+    display: flex;
+    color: aqua;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    bottom: 0%;
 }

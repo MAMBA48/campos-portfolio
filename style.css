@@ -104,6 +104,16 @@ div.bgProgress {
     border-radius: 2px;
     box-shadow: 0px 0px 4px 2px #00ff00;
 }
+.progressPerc {
+    display: flex;
+    background-color: #00ff00;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 1px #00ff00;
+    z-index: 1;
+    width: 50px;
+}
 .btStyle {
     display: flex;
     transition-duration: 0.15s;
@@ -167,6 +177,11 @@ div.bgProgress {
     bottom: 20px;
     border: 2px solid aqua;
     border-radius: 50%;
+    cursor: pointer;
+}
+.bt-help:hover {
+    box-shadow: 0px 0px 8px 1px aqua;
+    transition-duration: 0.2s;
 }
 footer {
     display: flex;

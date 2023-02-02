@@ -3,6 +3,7 @@ body, * {
     margin: 0px;
     padding: 0px;
     background-color: #000;
+    color: aqua;
 }
 main.container {
     display: flex;
@@ -13,8 +14,9 @@ main.container {
 content.interactions {
     display: flex;
     align-items: space-between;
-    height: 550px;
+    height: auto;
     width: 1000px;
+    padding-bottom: 20px;
     border-radius: 0px 15px 15px 15px;
     border: 1px solid aqua;
     border-top: 1px solid aqua;
@@ -23,7 +25,7 @@ content.interactions {
 aside.skills {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
     flex-direction: column;
     margin: 10px;
     padding: 8px;
@@ -31,7 +33,6 @@ aside.skills {
     height: auto;
     width: 200px;
     border-radius: 0px 0px 15px 15px;
-    color: aqua;
 }
 section.person {
     display: flex;
@@ -56,12 +57,12 @@ article.status {
 }
 main.info {
     display: flex;
+    height: auto;
     flex-direction: column;
     margin: 10px;
     border: 2px solid aqua;
     border-top: transparent;
     border-right: transparent;
-    color: aqua;
     width: 100%;
     border-radius: 0px 0px 15px 15px;
 }
@@ -85,6 +86,7 @@ td {
 }
 tr.lineSkills {
     display: flex;
+    align-items: center;
     flex-direction: row;
     border: 2px solid transparent;
 }
@@ -95,31 +97,49 @@ tr.lineSkills {
 }
 div.bgProgress {
     display: flex;
-    left: 0px;
-    padding: 2px;
+    padding: 0px;
     transition-duration: 0.5s;
     width: 70px;
-    background-color: #00ff008e;
+    background-color: rgba(0, 255, 255, 0.5);
     border: 0.5px solid transparent;
     border-radius: 2px;
-    box-shadow: 0px 0px 4px 2px #00ff00;
+    box-shadow: 0px 0px 2px 2px rgba(0, 255, 255, 0.5);
 }
 .progressPerc {
     display: flex;
-    background-color: #00ff00;
-    color: #fff;
+    background-color: aqua;
+    color: #000;
     font-weight: bold;
     border-radius: 2px;
-    box-shadow: 0px 0px 4px 1px #00ff00;
+    box-shadow: 0px 0px 4px 1px aqua;
     z-index: 1;
     width: 50px;
+}
+#js-Perc {
+    width: 30px;
+}
+#react-Perc {
+    width: 20px;
+}
+#html-Perc {
+    width: 50px;
+}
+#css-Perc {
+    width: 45px;
+}
+.num-perc {
+    display: flex;
+    width: 100%;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
 }
 .btStyle {
     display: flex;
     transition-duration: 0.15s;
     justify-content: center;
     align-items: center;
-    color: aqua;
     cursor: pointer;
     font-size: 16pt;
     height: 20px;
@@ -146,7 +166,6 @@ div.bgProgress {
     cursor: pointer;
     width: 120px;
     border: 2px solid aqua;
-    color: aqua;
     border-top: transparent;
     border-right: transparent;
     border-bottom: transparent;
@@ -161,6 +180,9 @@ div.bgProgress {
 }
 .textInfo {
     display: flex;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
 }
 .marginP {
     margin: 20px;
@@ -185,7 +207,6 @@ div.bgProgress {
 }
 footer {
     display: flex;
-    color: aqua;
     width: 100%;
     position: fixed;
     background-color: transparent;

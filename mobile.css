@@ -1,0 +1,8 @@
+@media screen and (min-width: 1000px) {
+    aside.skills {
+        margin: 4px;
+        padding: 2px;
+        justify-content: space-around;
+    }
+
+}

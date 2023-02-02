@@ -4,6 +4,7 @@
 <head>
     <!--META DADOS: carrega informações importantes para o brownser-->
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="mobile.css"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,28 +22,68 @@
                 <h2>progress</h2>
                 <table class="skills-list">
                     <tr class="lineSkills">
-                        <td id="btLess" class="progress"><button id="btLess" class="btStyle">-</button></td>
-                        <td id="js" class="progress"><div id="jsProgress" class="bgProgress"><div id="js-Perc" class="progressPerc">JS</div></div></td>
-                        <td id="percent"><div>100%</td>
-                        <td id="btMore" class="progress"><button id="btMore" class="btStyle">+</button></td>
+                        <td id="btLess" class="progress">
+                            <button id="btLess" class="btStyle">-</button>
+                        </td>
+                        <td id="js" class="progress">
+                            <div id="jsProgress" class="bgProgress">
+                                <div id="js-Perc" class="progressPerc">JS</div>
+                            </div>
+                        </td>
+                        <td id="percent">
+                            <div id="numberPerc" class="num-perc">20%</div>
+                        </td>
+                        <td id="btMore" class="progress">
+                            <button id="btMore" class="btStyle">+</button>
+                        </td>
                     </tr>
                     <tr class="lineSkills">
-                        <td id="btLess" class="progress"><button id="btLess" class="btStyle">-</button></td>
-                        <td id="react" class="progress"><div id="reactProgress" class="bgProgress"><div id="react-Perc" class="progressPerc">React</div></div></td>
-                        <td id="percent">100%</td>
-                        <td id="btMore" class="progress"><button id="btMore" class="btStyle">+</button></td>
+                        <td id="btLess" class="progress">
+                            <button id="btLess" class="btStyle">-</button>
+                        </td>
+                        <td id="react" class="progress">
+                            <div id="reactProgress" class="bgProgress">
+                                <div id="react-Perc" class="progressPerc">React</div>
+                            </div>
+                        </td>
+                        <td id="percent">
+                            <div id="numberPerc" class="num-perc">10%</div>
+                        </td>
+                        <td id="btMore" class="progress">
+                            <button id="btMore" class="btStyle">+</button>
+                        </td>
                     </tr>
                     <tr class="lineSkills">
-                        <td id="btLess" class="progress"><button id="btLess" class="btStyle">-</button></td>
-                        <td id="html" class="progress"><div id="htmlProgress" class="bgProgress"><div id="html-Perc" class="progressPerc">HTML</div></div></td>
-                        <td id="percent">100%</td>
-                        <td id="btMore" class="progress"><button id="btMore" class="btStyle">+</button></td>
+                        <td id="btLess" class="progress">
+                            <button id="btLess" class="btStyle">-</button>
+                        </td>
+                        <td id="html" class="progress">
+                            <div id="htmlProgress" class="bgProgress">
+                                <div id="html-Perc" class="progressPerc">HTML</div>
+                            </div>
+                        </td>
+                        <td id="percent">
+                            <div id="numberPerc" class="num-perc">74%</div>
+                        </td>
+                        <td id="btMore" class="progress">
+                            <button id="btMore" class="btStyle">+</button>
+                        </td>
                     </tr>
                     <tr class="lineSkills">
-                        <td id="btLess" class="progress"><button id="btLess" class="btStyle">-</button></td>
-                        <td id="css" class="progress"><div id="cssProgress" class="bgProgress"><div id="css-Perc" class="progressPerc">CSS</div></div></td>
-                        <td id="percent">100%</td>
-                        <td id="btMore" class="progress"><button id="btMore" class="btStyle" onclick="more()">+</button></td>
+                        <td id="btLess" class="progress">
+                            <button id="btLess" class="btStyle">-</button>
+                        </td>
+                        <td id="css" class="progress">
+                            <div id="cssProgress" class="bgProgress">
+                                <div id="css-Perc" class="progressPerc">CSS</div>
+                            </div>
+                        </td>
+                        <td id="percent">
+                            <div id="numberPerc" class="num-perc">64%</div>
+                        </td>
+                        <td id="btMore" class="progress">
+                            <button id="btMore" class="btStyle" onclick="more()">+</button>
+                        </td>
                     </tr>
                 </table>
             </article>
@@ -55,10 +96,19 @@
             </nav>
             <div class="textInfo">
                 <p class="marginP">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, veniam. Rem voluptatibus aliquid asperiores recusandae ducimus soluta quidem natus enim, alias, illum beatae, impedit vero odit laborum cumque voluptas voluptates.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita id magni unde quod aut facere libero voluptatum, doloribus odio consectetur sit recusandae fuga, nostrum ipsa vitae reiciendis reprehenderit amet?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quae perferendis porro aspernatur voluptatum cum nulla, aperiam nesciunt sapiente, autem ad assumenda quos illum, id atque harum culpa aliquid hic.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima expedita laborum perferendis omnis, magnam adipisci nihil tempora, blanditiis accusantium cupiditate vitae sed architecto quia esse ex, dolores fuga voluptate!
+                    <h2>Olá, </h2><p>meu nome é </p><h1>Eduardo Nascimento de Campos</h1><br>
+                    <p>
+                        O ano é 2023, estou estudando para me tornar <i>Desenvolvedor full-stack</i> na <strong>Arnia&copy;</strong>,
+                        estou com uma expectativa muito grande em relação ao curso e quero dar o meu máximo aqui!
+                    </p>
+                        <br>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, veniam. Rem voluptatibus aliquid asperiores recusandae ducimus soluta quidem natus enim, alias, illum beatae, impedit vero odit laborum cumque voluptas voluptates.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita id magni unde quod aut facere libero voluptatum, doloribus odio consectetur sit recusandae fuga, nostrum ipsa vitae reiciendis reprehenderit amet?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quae perferendis porro aspernatur voluptatum cum nulla, aperiam nesciunt sapiente, autem ad assumenda quos illum, id atque harum culpa aliquid hic.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima expedita laborum perferendis omnis, magnam adipisci nihil tempora, blanditiis accusantium cupiditate vitae sed architecto quia esse ex, dolores fuga voluptate!
+                    </p>
+                    
                 </p>
             </div>
         </main>
@@ -73,11 +123,6 @@
     let tableSkills = document.querySelector('.skills-list')
     let lineSkills = document.querySelector('.lineSkills')
     let tdSkills = document.querySelector('.progress')
-    
-    function more() {
-    let percent = document.querySelector('#more')
-        percent.style ="width: 10px;"
-    }
 </script>
 </body>
 </html>

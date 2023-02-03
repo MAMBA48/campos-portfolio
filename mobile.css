@@ -1,8 +1,10 @@
 @media screen and (min-width: 1000px) {
     aside.skills {
+        display: flex;
         margin: 4px;
         padding: 2px;
-        justify-content: space-around;
     }
-
+    section.person {
+        display: flex;
+    }
 }

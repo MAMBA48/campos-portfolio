@@ -5,9 +5,27 @@ body, * {
     background-color: #000;
     color: aqua;
 }
+a {
+    text-decoration: none;
+}
+p {
+    margin: 10px;
+}
+h2 {
+    margin: 10px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 main.container {
     display: flex;
-    margin-top: 5%;
+    margin-top: 3%;
     justify-content: center;
     align-items: center;
 }
@@ -24,11 +42,12 @@ content.interactions {
 }
 aside.skills {
     display: flex;
+    top: 10px;
+    position: relative;
     align-items: center;
-    justify-content: start;
     flex-direction: column;
-    margin: 10px;
-    padding: 8px;
+    margin: 2px;
+    padding: 0px;
     border: 1px solid transparent;
     height: auto;
     width: 200px;
@@ -36,6 +55,8 @@ aside.skills {
 }
 section.person {
     display: flex;
+    position: relative;
+    top: 20px;
     justify-content: center;
     align-items: center;
     height: 150px;

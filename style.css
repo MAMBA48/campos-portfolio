@@ -5,9 +5,6 @@ body, * {
     background-color: #000;
     color: aqua;
 }
-a {
-    text-decoration: none;
-}
 p {
     margin: 10px;
 }
@@ -74,7 +71,7 @@ article.status {
     width: 200px;
     border: 1px solid transparent;
     border-radius: 0px 0px 15px 15px;
-    padding: 5px;
+    padding: 0px;
 }
 main.info {
     display: flex;
@@ -179,7 +176,7 @@ div.bgProgress {
     height: 50px;
     border: 1px solid transparent;
 }
-.aba {
+.aba, a {
     display: flex;
     transition-duration: 0.2s;
     justify-content: center;
@@ -191,6 +188,7 @@ div.bgProgress {
     border-right: transparent;
     border-bottom: transparent;
     border-radius: 50px 10px 5px 0px;
+    text-decoration: none;
 }
 .aba:hover {
     border-left: transparent;

@@ -40,7 +40,7 @@ main.container {
     margin-top: 3%;
     justify-content: center;
     align-items: center;
-}
+    }
 content.interactions {
     display: flex;
     align-items: space-between;
@@ -64,6 +64,18 @@ aside.skills {
     width: 200px;
     border-radius: 0px 0px 15px 15px;
 }
+/*definindo animação, inicio "0%" e fim "100%".*/
+@-webkit-keyframes loading {
+    0% {
+       transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.person.is-animating {
+    animation: loading 1s cubic-bezier(0, .25, .7125, .1) infinite;
+}
 section.person {
     display: flex;
     position: relative;
@@ -73,7 +85,9 @@ section.person {
     height: 150px;
     width: 150px;
     border: 2px solid aqua;
-    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0.5px aqua;
+    border-radius: 100%;
+    border-right-color: #fff;
     padding: 5px;
 }
 article.status {
@@ -251,6 +265,7 @@ legend {
 }
 details {
     cursor: pointer;
+    transition: transform 1s;
 }
 footer {
     display: flex;

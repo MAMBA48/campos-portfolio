@@ -1,3 +1,6 @@
+/*@import == importa fontes externas para o documento*/
+@import url('');
+
 body, * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -5,11 +8,23 @@ body, * {
     background-color: #000;
     color: aqua;
 }
+a {
+    text-decoration: none;
+}
 p {
+    display: flex;
     margin: 10px;
+    flex-wrap: wrap;
+}
+b {
+    margin-right: 5px;
 }
 h2 {
     margin: 10px;
+}
+img {
+    margin: 10px;
+    width: 80px;
 }
 .contact {
     display: flex;
@@ -30,7 +45,7 @@ content.interactions {
     display: flex;
     align-items: space-between;
     height: auto;
-    width: 1000px;
+    width: 900px;
     padding-bottom: 20px;
     border-radius: 0px 15px 15px 15px;
     border: 1px solid aqua;
@@ -44,7 +59,6 @@ aside.skills {
     align-items: center;
     flex-direction: column;
     margin: 2px;
-    padding: 0px;
     border: 1px solid transparent;
     height: auto;
     width: 200px;
@@ -65,13 +79,13 @@ section.person {
 article.status {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 250px;
-    width: 200px;
+    height: auto;
+    width: 180px;
     border: 1px solid transparent;
     border-radius: 0px 0px 15px 15px;
-    padding: 0px;
+    padding: 5px;
 }
 main.info {
     display: flex;
@@ -133,15 +147,19 @@ div.bgProgress {
     z-index: 1;
     width: 50px;
 }
+/*Percent color progress*/
 #js-Perc {
     width: 30px;
 }
+/*Percent color progress*/
 #react-Perc {
     width: 20px;
 }
+/*Percent color progress*/
 #html-Perc {
     width: 50px;
 }
+/*Percent color progress*/
 #css-Perc {
     width: 45px;
 }
@@ -170,36 +188,33 @@ div.bgProgress {
 }
 .top-menu {
     display: flex;
-    padding: 4px;
-    justify-content: right;
+    padding: 2px;
+    justify-content: left;
     top: 0%;
     height: 50px;
     border: 1px solid transparent;
 }
-.aba, a {
+button {
+    cursor: pointer;
+}
+.aba {
     display: flex;
-    transition-duration: 0.2s;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     width: 120px;
-    border: 2px solid aqua;
-    border-top: transparent;
-    border-right: transparent;
-    border-bottom: transparent;
-    border-radius: 50px 10px 5px 0px;
-    text-decoration: none;
+    border: 1px solid transparent;
 }
 .aba:hover {
-    border-left: transparent;
-    border-bottom: 0.5px solid aqua;
-    box-shadow: 0px 0px 10px 1px aqua;
-    box-shadow: 0px 0px #000;
-    border-radius: 50px;
+    color: aqua;
+    border-bottom: 1px solid aqua;
 }
+
 .textInfo {
     display: flex;
     height: auto;
+    background-color: transparent;
     padding: 20px;
     flex-direction: column;
 }
@@ -223,6 +238,19 @@ div.bgProgress {
 .bt-help:hover {
     box-shadow: 0px 0px 8px 1px aqua;
     transition-duration: 0.2s;
+}
+legend {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    border: 1px solid transparent;
+    margin-top: 40px;
+    padding: 6px;
+    justify-content: center;
+}
+details {
+    cursor: pointer;
 }
 footer {
     display: flex;

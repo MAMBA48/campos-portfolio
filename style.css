@@ -8,6 +8,22 @@ body, * {
     background-color: #000;
     color: aqua;
 }
+header {
+    display: flex;
+    position: fixed;
+    justify-content: left;
+    align-items: center;
+    background-color: transparent;
+    top: 0%;
+    height: 50px;
+    width: 0%;
+    border: 1px transparent;
+}
+.date {
+    display: flex;
+    position: relative;
+    margin: 10px;
+}
 a {
     text-decoration: none;
 }
@@ -23,8 +39,10 @@ h2 {
     margin: 10px;
 }
 img {
+    background-size: cover;
     margin: 10px;
     width: 80px;
+    background-color: transparent;
 }
 .contact {
     display: flex;
@@ -37,9 +55,10 @@ img {
 }
 main.container {
     display: flex;
-    margin-top: 3%;
+    margin-top: 50px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
     }
 content.interactions {
     display: flex;
@@ -65,20 +84,21 @@ aside.skills {
     border-radius: 0px 0px 15px 15px;
 }
 /*definindo animação, inicio "0%" e fim "100%".*/
-@-webkit-keyframes loading {
-    0% {
-       transform: rotate(0);
+    @keyframes loading {
+        0% {
+        transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 .person.is-animating {
     animation: loading 1s cubic-bezier(0, .25, .7125, .1) infinite;
 }
 section.person {
     display: flex;
     position: relative;
+    background-color: transparent;
     top: 20px;
     justify-content: center;
     align-items: center;
@@ -87,7 +107,7 @@ section.person {
     border: 2px solid aqua;
     box-shadow: 0px 0px 10px 0.5px aqua;
     border-radius: 100%;
-    border-right-color: #fff;
+    border-left-color: #fff;
     padding: 5px;
 }
 article.status {
@@ -255,6 +275,7 @@ button {
 }
 legend {
     display: flex;
+    align-items: center;
     flex-direction: column;
     height: auto;
     width: auto;
@@ -262,6 +283,17 @@ legend {
     margin-top: 40px;
     padding: 6px;
     justify-content: center;
+}
+form {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+address {
+    margin: 6px;
+    padding: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    border-radius: 15px;
 }
 details {
     cursor: pointer;

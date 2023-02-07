@@ -77,5 +77,5 @@ function date() {
             break;
         }
         
-        console.log(`This date: ${numDay} ${dayAct}, ${monthAct}, ${yearAct}`)
+        console.log(`Hoje é dia: ${numDay}, ${dayAct}, ${monthAct} de ${yearAct}`)
     }

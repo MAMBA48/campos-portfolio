@@ -5,6 +5,7 @@ body, * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     background-color: #000;
     color: aqua;
 }
@@ -121,6 +122,9 @@ article.status {
     border: 1px solid transparent;
     border-radius: 0px 0px 15px 15px;
     padding: 5px;
+}
+article {
+    border-radius: 20px;
 }
 main.info {
     display: flex;
@@ -287,6 +291,7 @@ button {
 .optionAsk {
     display: flex;
     justify-content: center;
+    background-color: transparent;
     align-items: center;
     margin: 10px;
     border: 1px solid rgba(0, 255, 255, 0.5);
@@ -298,6 +303,7 @@ button {
 .quiz {
     display: flex;
     margin-bottom: 20px;
+    background-color: transparent;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
